@@ -1,0 +1,47 @@
+1° PARTE:
+Asuma que un arreglo está almacenado en la memoria utilizando
+la representación row-major. Si la matriz a[10][20] ya fue
+declarada y la dirección de su primer elemento es 100; encuentre la
+dirección de los siguientes elementos:
+a[0][0], a[2][1], a[5][1], a[1][10], a[2][10], a[5][3], a[9][19]
+
+1) a[0][0]  
+(0*20+0+100)=100
+
+2) a[2][1]   
+(2*20+1+100)=141
+
+3) a[5][1]   
+(5*20+1+100)=201
+
+4) a[1][10]  
+(1*20+10+100)=130
+
+5) a[2][10]  
+(2*20+10+100)=150
+
+6) a[5][3]   
+(5*20+3+100)=203
+
+7) a[9][19]  
+(9*20+19+100)=299
+
+2° PARTE:
+¿Son válidas las siguientes expresiones?
+
+1) matrix[0][0] = *(*(matrix))
+  	R/Si es valida la expresion
+
+2) matrix[ i ][ j ] = *((*(matrix)) + (i * COLS + j))
+        R/Si es valida la expresion
+
+3) matrix[ i ][ j ] = *(*(matrix + i) + j)
+        R/Si es valida la expresion
+
+4) matrix[ i ][ j ] = *(matrix[i] + j)
+        R/Si es valida la expresion
+
+5) matrix[ i ][ j ] = (*(matrix + i))[j]
+        R/Si es valida la expresion
+
+Por lo tanto todas las expresiones son validas ya que al sustituir los datos del punto anterior(1° parte), dan la respuesta por ende son validas.
