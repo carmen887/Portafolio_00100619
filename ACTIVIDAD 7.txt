@@ -1,0 +1,55 @@
+Ejercicio 1: Obtener el segundo elemento de una pila.									
+
+valid = true;
+s = initialize;
+
+int obtener2doelmto(stack(s)){
+	int i;
+	
+if (!empty(s)){
+	
+	pop(s);
+
+	if(!empty(s)){
+	i = pop(s);
+}
+	else{
+	solo tiene un elemento;
+}
+}
+else{
+ 	Esta vacio;
+}
+}
+
+
+Ejercicio 2: Obtener el segundo elemento de una pila dejandola intacta.
+
+valid = true;
+s = initialize;
+
+int segundoelemento(stack(s)){
+	int i, ar;
+
+if(empty(s)){
+
+	No se puede:c;
+}
+
+else{
+	ar = pop(s);
+	
+
+	if(!empty(s)){
+
+	i = pop(s);
+	push(s, i);
+	push(s, ar);
+	
+	}
+	else{
+	Solo tiene un elemento;
+}
+}
+}
+
